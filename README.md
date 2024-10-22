@@ -10,9 +10,9 @@ Detailed View for Each Subject: Shows additional information about each topic, i
 Easy Navigation: Seamless navigation between the main dashboard and detailed views.
 
 Requirements
-- Android Studio (latest version recommended)
-- Hilt library (used for dependency injection)
-- Retrofit2 (used for communication with the API)
+- Android Studio
+- Hilt library
+- Retrofit2 (used for communication with the API to obtain data)
 
 To install retrofit and hilt, enter this into android studios
 
