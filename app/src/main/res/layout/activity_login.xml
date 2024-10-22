@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Root layout using LinearLayout to arrange items vertically -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,31 +8,26 @@
     android:orientation="vertical"
     android:padding="16dp">
 
+    <!-- TextView for the login title -->
     <TextView
         android:id="@+id/Login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="LOG IN PAGE"
-        android:textSize="30dp"
-        android:textStyle="bold" />
+        android:textSize="50dp"
+        android:textAlignment="center"
+        android:layout_marginTop="35dp"/>
 
-    <TextView
-        android:id="@+id/logininst"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Please Log in"
-        android:textSize="15dp"
-        android:layout_marginTop="50dp"
-         />
-
+    <!-- EditText for entering the username -->
     <EditText
         android:id="@+id/etUsername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Username (first name)"
         android:inputType="text"
-        android:layout_marginTop="25dp"/>
+        android:layout_marginTop="30dp"/>
 
+    <!-- EditText for entering the password -->
     <EditText
         android:id="@+id/etPassword"
         android:layout_width="match_parent"
@@ -39,9 +35,13 @@
         android:hint="Password (student id)"
         android:inputType="textPassword" />
 
+    <!-- Button for login -->
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login" />
+        android:text="Login"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@android:color/holo_blue_light" />
+    <!--colour code to make button blue-->
 </LinearLayout>

@@ -1,51 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!-- Root LinearLayout to arrange child elements vertically -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
+    android:gravity="center"
     android:padding="16dp">
 
+    <!-- TextView to display the field of science -->
     <TextView
         android:id="@+id/tvfield"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:textSize="18sp"
-        android:text="Field" />
+        android:text="Field"
+        android:gravity="center" />
 
+    <!-- TextView to display the concept of the field -->
     <TextView
         android:id="@+id/tvconcept"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Concept"
-        android:paddingTop="4dp" />
+        android:paddingTop="4dp"
+        android:gravity="center" />
 
+    <!-- TextView to display the scientist's name -->
     <TextView
         android:id="@+id/tvscientist"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Scientist"
-        android:paddingTop="4dp" />
+        android:paddingTop="4dp"
+        android:gravity="center" />
 
+    <!-- TextView to display the year proposed -->
     <TextView
         android:id="@+id/tvyearProposed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Year Proposed"
-        android:paddingTop="4dp" />
+        android:paddingTop="4dp"
+        android:gravity="center" />
 
+    <!-- TextView to display the branch of science -->
     <TextView
         android:id="@+id/tvbranch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="branch"
-        android:paddingTop="4dp" />
+        android:text="Branch"
+        android:paddingTop="4dp"
+        android:gravity="center" />
 
+    <!-- Button to see detailed information about the science item -->
     <Button
         android:id="@+id/btnSeeDetail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="8dp"
-        android:text="See Detail" />
+        android:text="See Detail"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:gravity="center" />
+
 </LinearLayout>

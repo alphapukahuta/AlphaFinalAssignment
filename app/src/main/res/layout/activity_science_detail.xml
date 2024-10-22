@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <!-- Sport Name -->
+    <!-- Display the Field of Science -->
     <TextView
         android:id="@+id/tvfield"
         android:layout_width="wrap_content"
@@ -16,58 +16,60 @@
         android:textStyle="bold"
         android:paddingBottom="10dp"/>
 
-    <!-- Player Count -->
+    <!-- Display the Concept of Science -->
     <TextView
         android:id="@+id/tvconcept"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Concept"
-        android:textSize="18sp"
+        android:textSize="20sp"
         android:paddingBottom="15dp"/>
 
-    <!-- Field Type -->
+    <!-- Display the Scientist's Name -->
     <TextView
         android:id="@+id/tvscientist"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Scientist"
-        android:textSize="18sp"
+        android:textSize="20sp"
         android:paddingBottom="15dp"/>
 
-    <!-- Olympic Sport -->
+    <!-- Display the Year Proposed -->
     <TextView
         android:id="@+id/tvyearProposed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Year Proposed"
-        android:textSize="18sp"
-        android:paddingBottom="8dp"/>
+        android:textSize="20sp"
+        android:paddingBottom="15dp"/>
 
+    <!-- Display the Branch of Science -->
     <TextView
         android:id="@+id/tvbranch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Branch"
-        android:textSize="18sp"
-        android:paddingBottom="8dp"/>
+        android:textSize="20sp"
+        android:paddingBottom="15dp"/>
 
     <!-- Description -->
-
-    <!-- Back Button -->
     <TextView
         android:id="@+id/tvdescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingBottom="16dp"
+        android:paddingBottom="15dp"
         android:text="Description"
-        android:textSize="18sp" />
+        android:textSize="20sp" />
 
+    <!-- Back Button back to the dashboard-->
     <Button
         android:id="@+id/btnBackToDashboard"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Back"
         android:layout_gravity="center_horizontal"
-        android:onClick="goBackToDashboard"/>
+        android:onClick="goBackToDashboard"
+        android:backgroundTint="@android:color/holo_blue_light" />
+    <!--colour code to make button blue-->
 
 </LinearLayout>
