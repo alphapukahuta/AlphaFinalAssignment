@@ -1,46 +1,45 @@
-Sports Dashboard Android App
+Science Dashboard Android App
 
 Overview
-
-The Sports Dashboard app allows users to log in using their credentials and view a list of sports, each with relevant details such as player count, field type, and Olympic status. Users can click on a specific sport to view more details about it.
+The Science Subjects App allows users to log in with their credentials and explore a list of science topics, each with relevant information such as the concept, scientist, year proposed, and scientific branch. Users can click on a specific subject to view more details about it.
 
 Features
+User Authentication: Users can log in via a login screen.
+List of Science Subjects: Displays a list of science topics fetched from a REST API.
+Detailed View for Each Subject: Shows additional information about each topic, including the concept, scientist, and description.
+Easy Navigation: Seamless navigation between the main dashboard and detailed views.
 
-- User authentication via a login screen.
-- Displays a list of sports from a REST API.
-- Detail view for each sport, showing additional information.
-- Navigation between dashboard and detail screens.
----
 Requirements
 - Android Studio (latest version recommended)
 - Hilt library (used for dependency injection)
 - Retrofit2 (used for communication with the API)
 
-  To install retrofit and hilt just paste this in the buil.gradle.kts:
-  // Retrofit dependancies
-    implementation("com.squareup.retrofit2:retrofit:2.11.0")
-    implementation("com.squareup.retrofit2:converter-moshi:2.11.0")
-    implementation("com.squareup.moshi:moshi-kotlin:1.15.1")
-    implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
-    implementation("com.squareup.retrofit2:converter-gson:2.11.0")
-    implementation ("com.google.code.gson:gson:2.11.0")
+To install retrofit and hilt, enter this into android studios
 
+// Core Retrofit dependencies
+implementation("com.squareup.retrofit2:retrofit:2.11.0")
+implementation("com.squareup.retrofit2:converter-gson:2.11.0")
+implementation("com.squareup.retrofit2:converter-moshi:2.11.0")
 
+// Gson and Moshi for JSON parsing
+implementation("com.google.code.gson:gson:2.11.0")
+implementation("com.squareup.moshi:moshi-kotlin:1.15.1")
 
-    // Hilt dependancies
-    implementation("com.google.dagger:hilt-android:2.52")
-    implementation(libs.androidx.recyclerview)
+// OkHttp logging interceptor for network debugging
+implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
 
-Getting Started
+// Hilt dependancies
+implementation("com.google.dagger:hilt-android:2.52")
+implementation(libs.androidx.recyclerview)
 
-Follow these steps to get the project running on your local machine:
+Follow these steps to get the project running
 
-1. Clone the Repository
+1. Obtain the base url
 
-Clone the project to your local machine:
+2. Intall Hilt and Retrofit
 
-2.Intall Hilt and Retrofit (it should already be installed in the proyect)
-
-4. Set The API url and endpoints (It is already set)
+4. Input the API url and endpoints
 
 3. Run the application
+
+4. input the correct coredentials
