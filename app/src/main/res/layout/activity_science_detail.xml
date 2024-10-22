@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Sport Name -->
+    <TextView
+        android:id="@+id/tvfield"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Field"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:paddingBottom="10dp"/>
+
+    <!-- Player Count -->
+    <TextView
+        android:id="@+id/tvconcept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Concept"
+        android:textSize="18sp"
+        android:paddingBottom="15dp"/>
+
+    <!-- Field Type -->
+    <TextView
+        android:id="@+id/tvscientist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scientist"
+        android:textSize="18sp"
+        android:paddingBottom="15dp"/>
+
+    <!-- Olympic Sport -->
+    <TextView
+        android:id="@+id/tvyearProposed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Year Proposed"
+        android:textSize="18sp"
+        android:paddingBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tvbranch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Branch"
+        android:textSize="18sp"
+        android:paddingBottom="8dp"/>
+
+    <!-- Description -->
+
+    <!-- Back Button -->
+    <TextView
+        android:id="@+id/tvdescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:text="Description"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnBackToDashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_gravity="center_horizontal"
+        android:onClick="goBackToDashboard"/>
+
+</LinearLayout>
